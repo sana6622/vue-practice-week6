@@ -32,7 +32,6 @@
   align-items: flex-end;
 }
 .homeView .banner .banner-content {
-  outline: 1px solid yellow;
   width: 445px;
   margin-right: 15%;
 }
@@ -67,131 +66,298 @@
     height: 400px;
   }
 }
-.homeView main {
-  padding-right: 405px;
-  padding-left: 405px;
-  margin-top: 60px;
-}
-.homeView main .main-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.homeView main .main-section .section-content {
-  flex: 1;
-  text-align: left;
-}
-.homeView main .main-section .section-content div {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-.homeView main .main-section .section-content h3 {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 48px;
-}
-.homeView main .main-section .section-content .content-des {
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-.homeView main .main-section .section-content .content-more {
+.homeView .more {
   font-size: 16px;
   font-weight: 600px;
   color: #ac8a46;
 }
-.homeView main .main-section .section-img {
+.homeView main .info {
+  margin-top: 60px;
+  padding-right: 405px;
+  padding-left: 405px;
+}
+.homeView main .info .info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeView main .info .info-section .section-content {
+  flex: 1;
+  text-align: left;
+}
+.homeView main .info .info-section .section-content div {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.homeView main .info .info-section .section-content h3 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.homeView main .info .info-section .section-content .content-des {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.homeView main .info .info-section .section-img {
   flex: 1;
   aspect-ratio: 1/1;
 }
-.homeView main .main-section:nth-child(1), .homeView main .main-section:nth-child(3) {
+.homeView main .info .info-section:nth-child(1), .homeView main .info .info-section:nth-child(3) {
   flex-direction: row-reverse;
 }
-.homeView main .main-section:nth-child(1) .section-img {
+.homeView main .info .info-section:nth-child(1) .section-img {
   background: url(./../assets/img/index2.jpg);
   background-size: cover;
 }
-.homeView main .main-section:nth-child(2) .section-img {
+.homeView main .info .info-section:nth-child(2) .section-img {
   background: url(./../assets/img/index3.png);
   background-size: cover;
 }
-.homeView main .main-section:nth-child(3) .section-img {
+.homeView main .info .info-section:nth-child(3) .section-img {
   background: url(./../assets/img/index4.jpg);
   background-size: cover;
 }
-.homeView main .main-section:nth-child(4) {
+.homeView main .info .info-section:nth-child(4) {
   counter-reset: num;
 }
-.homeView main .main-section:nth-child(4) h4 {
+.homeView main .info .info-section:nth-child(4) h4 {
   font-size: 24px;
   line-height: 36px;
 }
-.homeView main .main-section:nth-child(4) h4::before {
+.homeView main .info .info-section:nth-child(4) h4::before {
   display: block;
   counter-increment: num;
   content: counter(num) ".";
   top: 0;
 }
-.homeView main .main-section:nth-child(4) p {
+.homeView main .info .info-section:nth-child(4) p {
   font-size: 16px;
   margin-bottom: 52px;
 }
-.homeView main .main-section:nth-child(4) button {
+.homeView main .info .info-section:nth-child(4) button {
   margin-top: 8px;
   width: 100%;
   font-size: 20px;
 }
-.homeView main .main-section:nth-child(4) .section-img {
+.homeView main .info .info-section:nth-child(4) .section-img {
   background: url(./../assets/img/index5.jpg);
   background-size: cover;
   aspect-ratio: 1/2;
 }
 @media (max-width: 1799px) {
-  .homeView main {
+  .homeView main .info {
     padding-right: 200px;
     padding-left: 200px;
   }
-  .homeView main .main-section:nth-child(4) .section-img {
+  .homeView main .info .info-section:nth-child(4) .section-img {
     flex: 1;
     aspect-ratio: 1/2;
   }
-  .homeView main .main-section:nth-child(4) .section-content div {
+  .homeView main .info .info-section:nth-child(4) .section-content div {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .homeView main .main-section:nth-child(4) p {
+  .homeView main .info .info-section:nth-child(4) p {
     font-size: 16px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 1200px) {
-  .homeView main {
+  .homeView main .info {
     padding-right: 100px;
     padding-left: 100px;
   }
 }
 @media (max-width: 992px) {
-  .homeView main {
+  .homeView main .info {
     padding-right: 15px;
     padding-left: 15px;
   }
 }
 @media (max-width: 768px) {
-  .homeView main .main-section {
+  .homeView main .info .info-section {
     display: block;
   }
-  .homeView main .main-section .section-content div {
+  .homeView main .info .info-section .section-content div {
     padding-left: 0;
     padding-right: 0;
   }
-  .homeView main .main-section .section-img {
+  .homeView main .info .info-section .section-img {
     text-align: center;
     width: 100%;
   }
-  .homeView main .main-section:nth-child(4) .section-img {
+  .homeView main .info .info-section:nth-child(4) .section-img {
     height: 680px;
   }
-  .homeView main .main-section:nth-child(4) p {
+  .homeView main .info .info-section:nth-child(4) p {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+}
+.homeView main .product {
+  display: flex;
+  flex-direction: row;
+  background-color: #E0E0E0;
+  padding-left: 0;
+  margin-top: 60px;
+  padding-right: 405px;
+  padding-left: 405px;
+  padding-bottom: 40px;
+}
+.homeView main .product li {
+  margin-right: 30px;
+  margin-top: 40px;
+  width: 31.5%;
+}
+.homeView main .product li .product-img img {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+}
+.homeView main .product li h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.homeView main .product li p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.homeView main .product li span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.homeView main .product li .sp-price {
+  color: #8D8D8D;
+  text-decoration: line-through;
+  padding-left: 8px;
+}
+.homeView main .product li:last-child {
+  margin-right: 0;
+}
+.homeView main .product li:last-child .product-img {
+  position: relative;
+}
+.homeView main .product li:last-child .product-img::after {
+  content: "sold out";
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #fff;
+}
+.homeView main .product li:last-child .product-img::before {
+  opacity: 0.3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1799px) {
+  .homeView main .product {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  .homeView main .product li {
+    width: 33.3%;
+  }
+}
+@media (max-width: 1200px) {
+  .homeView main .product {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .homeView main .product li {
+    width: 35%;
+  }
+}
+@media (max-width: 992px) {
+  .homeView main .product {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .homeView main .product {
+    flex-direction: column;
+  }
+  .homeView main .product li {
+    margin-right: 0;
+    width: 100%;
+  }
+  .homeView main .product li .product-img img {
+    width: 100%;
+    aspect-ratio: 1/1.015;
+  }
+}
+.homeView main .recycle {
+  padding-right: 405px;
+  padding-left: 405px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+.homeView main .recycle .recycle-img {
+  flex: 2.1;
+}
+.homeView main .recycle .recycle-img img {
+  width: 100%;
+}
+.homeView main .recycle .recycle-info {
+  flex: 1;
+  margin-left: 30px;
+}
+.homeView main .recycle .recycle-info h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+.homeView main .recycle .recycle-info p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+@media (max-width: 1799px) {
+  .homeView main .recycle {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .homeView main .recycle {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .homeView main .recycle {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .homeView main .recycle {
+    flex-direction: column;
+  }
+  .homeView main .recycle .recycle-img {
+    flex: 1;
+  }
+  .homeView main .recycle .recycle-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1.5;
+  }
+  .homeView main .recycle .recycle-info {
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -1,16 +1,32 @@
-.navbar {
-  background-color: pink;
-}
 .navbar nav {
-  outline: 1px solid red;
   width: 100%;
   margin-right: 405px;
   margin-left: 405px;
   display: flex;
   justify-content: space-around;
+  background-color: #fff !important;
 }
-.navbar .logo {
-  outline: 1px solid red;
+.navbar .nav-cart {
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+}
+.navbar .nav-cart .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.navbar .nav-cart .material-symbols-outlined {
+  color: #8D8D8D;
+}
+.navbar .nav-cart .cart-num {
+  background-color: #916000;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
 }
 .navbar ul {
   width: 100%;
@@ -20,15 +36,69 @@
   margin-bottom: 0;
 }
 .navbar ul li {
-  margin-right: 32px;
+  margin-right: 45px;
+  position: relative;
+  font-size: 20px;
+  color: #8D8D8D;
 }
-.navbar ul :nth-child(4) {
-  outline: 1px solid blue;
+.navbar ul li:hover {
+  background: linear-gradient(white 90%, #916000 10%);
+}
+.navbar ul li:active, .navbar ul li:focus-visible {
+  background: linear-gradient(white 90%, #916000 10%);
+  color: rgba(145, 97, 0, 0.6156862745);
+}
+.navbar ul li:nth-child(6) {
   margin-right: 0;
+}
+.navbar ul .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.navbar ul .material-symbols-outlined {
+  color: #8D8D8D;
+  position: absolute;
+  top: 2px;
+  left: -27px;
 }
 @media (max-width: 1600px) {
   .navbar nav {
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar nav {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navbar .navbar-brand {
+    margin-left: 20px;
+  }
+  .navbar button {
+    margin-right: 20px;
+  }
+  .navbar ul li {
+    margin-right: 0;
+    background: #707070;
+    color: #fff;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+  .navbar ul li span {
+    width: 100%;
+  }
+  .navbar ul li:hover {
+    background: #cecdcd;
+  }
+  .navbar ul li:active, .navbar ul li:focus-visible {
+    background: #cecdcd;
+    color: rgba(145, 97, 0, 0.6156862745);
   }
 }/*# sourceMappingURL=navebarComponent.css.map */

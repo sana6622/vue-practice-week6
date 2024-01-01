@@ -2,9 +2,11 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 import NavebarComponent from './components/NavebarComponent.vue';
+import Footer from'./components/FooterComponent.vue';
 export default{
   components:{    
-    NavebarComponent
+    NavebarComponent,
+    Footer
   }
 }
 </script>
@@ -14,6 +16,9 @@ export default{
     <NavebarComponent></NavebarComponent>    
   </div> 
   <RouterView />
+  <div>
+    <Footer></footer>
+  </div>
 </template>
 
 <style lang="scss">

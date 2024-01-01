@@ -6,7 +6,34 @@
         display: flex;
         justify-content: space-around;
         background-color: #fff !important;
-
+    }
+    .nav-cart{
+        margin-left: auto;
+        margin-right: 20px;
+        position: relative;
+         //google font 圖示
+         .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .material-symbols-outlined {
+            color: #8D8D8D;            
+            
+        }
+        .cart-num{
+            background-color:#916000 ;
+            border-radius: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+            color:#fff;
+            font-size: 12px;
+            position: absolute;
+            top: -10px;
+            right: -5px;
+        }
     }
 
 
@@ -23,6 +50,13 @@
             position: relative;
             font-size: 20px;
             color: #8D8D8D;
+        }
+        li:hover{
+            background: linear-gradient(white 90%, #916000 10%);            
+        }
+        li:active,li:focus-visible{
+            background: linear-gradient(white 90%, #916000 10%); 
+            color:#9161009d;          
         }
 
         li:nth-child(6) {
@@ -54,7 +88,7 @@
         }
     }
 
-    @media(max-width:992px) {
+    @media(max-width:991px) {
         .container-fluid {
             padding: 0;
             margin: 0;
@@ -88,6 +122,13 @@
                     width: 100%;
                 }
 
+            }
+            li:hover{
+                background: #cecdcd;;            
+            }
+            li:active,li:focus-visible{
+                background: #cecdcd;;
+                color:#9161009d;          
             }
         }
     }
