@@ -10,14 +10,18 @@ export default{
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <NavebarComponent></NavebarComponent>    
-  </div>
-
+  </div> 
   <RouterView />
 </template>
 
 <style lang="scss">
 @import "./assets/all.scss";
+#app{
+  margin: 0 !important;
+  padding: 0 !important;  
+ 
+}
 
 </style>

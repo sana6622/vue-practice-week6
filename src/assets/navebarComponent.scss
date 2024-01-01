@@ -1,0 +1,96 @@
+.navbar {
+    nav {
+        width: 100%;
+        margin-right: 405px;
+        margin-left: 405px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff !important;
+
+    }
+
+
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 0;
+
+        li {
+            margin-right: 45px;
+            position: relative;
+            font-size: 20px;
+            color: #8D8D8D;
+        }
+
+        li:nth-child(6) {
+            margin-right: 0;
+        }
+
+        //google font 圖示
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .material-symbols-outlined {
+            color: #8D8D8D;
+            position: absolute;
+            top: 2px;
+            left: -27px;
+        }
+    }
+
+
+    @media(max-width:1600px) {
+        nav {
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+    }
+
+    @media(max-width:992px) {
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 20px;
+        }
+
+        button {
+            margin-right: 20px;
+        }
+
+        ul {
+            li {
+                margin-right: 0;
+                background: #707070;
+                color: #fff;
+                width: 100%;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                text-align: center;
+                border-bottom: 1px solid #fff;
+
+                span {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+
+}

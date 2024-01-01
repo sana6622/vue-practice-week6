@@ -1,0 +1,197 @@
+.homeView button {
+  width: 350px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 26px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .homeView button {
+    width: 345px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .homeView button {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.homeView .banner {
+  color: #fff;
+  height: calc(100vh - 50px);
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true") left center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.homeView .banner .banner-content {
+  outline: 1px solid yellow;
+  width: 445px;
+  margin-right: 15%;
+}
+.homeView .banner .banner-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.homeView .banner .banner-content h1 + p {
+  font-size: 24px;
+  text-align: left;
+  padding-left: 10px;
+}
+.homeView .banner .banner-content button {
+  color: #fff;
+  border-color: #fff;
+}
+@media (max-width: 768px) {
+  .homeView .banner .banner-content {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .homeView .banner .h1 {
+    font-size: 32px;
+  }
+  .homeView .banner h1 + p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .homeView .banner {
+    height: 400px;
+  }
+}
+.homeView main {
+  padding-right: 405px;
+  padding-left: 405px;
+  margin-top: 60px;
+}
+.homeView main .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeView main .main-section .section-content {
+  flex: 1;
+  text-align: left;
+}
+.homeView main .main-section .section-content div {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.homeView main .main-section .section-content h3 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.homeView main .main-section .section-content .content-des {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.homeView main .main-section .section-content .content-more {
+  font-size: 16px;
+  font-weight: 600px;
+  color: #ac8a46;
+}
+.homeView main .main-section .section-img {
+  flex: 1;
+  aspect-ratio: 1/1;
+}
+.homeView main .main-section:nth-child(1), .homeView main .main-section:nth-child(3) {
+  flex-direction: row-reverse;
+}
+.homeView main .main-section:nth-child(1) .section-img {
+  background: url(./../assets/img/index2.jpg);
+  background-size: cover;
+}
+.homeView main .main-section:nth-child(2) .section-img {
+  background: url(./../assets/img/index3.png);
+  background-size: cover;
+}
+.homeView main .main-section:nth-child(3) .section-img {
+  background: url(./../assets/img/index4.jpg);
+  background-size: cover;
+}
+.homeView main .main-section:nth-child(4) {
+  counter-reset: num;
+}
+.homeView main .main-section:nth-child(4) h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.homeView main .main-section:nth-child(4) h4::before {
+  display: block;
+  counter-increment: num;
+  content: counter(num) ".";
+  top: 0;
+}
+.homeView main .main-section:nth-child(4) p {
+  font-size: 16px;
+  margin-bottom: 52px;
+}
+.homeView main .main-section:nth-child(4) button {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 20px;
+}
+.homeView main .main-section:nth-child(4) .section-img {
+  background: url(./../assets/img/index5.jpg);
+  background-size: cover;
+  aspect-ratio: 1/2;
+}
+@media (max-width: 1799px) {
+  .homeView main {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+  .homeView main .main-section:nth-child(4) .section-img {
+    flex: 1;
+    aspect-ratio: 1/2;
+  }
+  .homeView main .main-section:nth-child(4) .section-content div {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .homeView main .main-section:nth-child(4) p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .homeView main {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .homeView main {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .homeView main .main-section {
+    display: block;
+  }
+  .homeView main .main-section .section-content div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .homeView main .main-section .section-img {
+    text-align: center;
+    width: 100%;
+  }
+  .homeView main .main-section:nth-child(4) .section-img {
+    height: 680px;
+  }
+  .homeView main .main-section:nth-child(4) p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=home.css.map */
