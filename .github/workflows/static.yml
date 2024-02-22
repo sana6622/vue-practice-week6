@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ https://sana6622.github.io/vue-practice-week6 }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

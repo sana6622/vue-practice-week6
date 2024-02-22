@@ -127,7 +127,7 @@
         <div class="recycle-info">
           <h3>Bottle-Recycling</h3>
           <p>Recycle your used empty bottles and be rewarded!</p>
-          <p>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+          <p>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better ment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
           <p class="more">查看更多</p>
         </div>
 
