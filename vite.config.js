@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/vue-practice-week6/',
+  base:'vue-practice-week6/',
   plugins: [
     vue(),
   ],
